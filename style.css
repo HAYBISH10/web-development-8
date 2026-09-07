@@ -1,0 +1,102 @@
+/* ==========================================
+   EXPENSE TRACKER - CUSTOM STYLES
+   ========================================== */
+
+:root {
+    --primary: #0a2e6d;
+    --gold: #d4af37;
+    --dark: #1f2937;
+    --light: #f5f7fa;
+}
+
+
+/* Body */
+
+body {
+    background: var(--light);
+    color: var(--dark);
+    min-height: 100vh;
+}
+
+
+/* Header */
+
+header h1 {
+    color: var(--primary);
+}
+
+
+/* Add Expense Button */
+
+#addExpenseBtn {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    transition: all 0.2s ease;
+}
+
+#addExpenseBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(10, 46, 109, 0.2);
+}
+
+
+/* Total */
+
+#totalExpenses {
+    color: var(--primary);
+}
+
+
+/* Cards */
+
+.card {
+    border-radius: 12px;
+}
+
+
+/* Table */
+
+.table th {
+    color: var(--primary);
+}
+
+
+/* Table rows */
+
+.table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+
+/* Inputs */
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(10, 46, 109, 0.15);
+}
+
+
+/* Footer */
+
+footer {
+    font-size: 14px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .card-body {
+        padding: 20px !important;
+    }
+}
